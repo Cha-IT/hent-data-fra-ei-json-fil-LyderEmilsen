@@ -23,10 +23,10 @@ knapp.addEventListener('click', () => {
 gjettKnapp.addEventListener('click', () => {
     const gjett = gjettInput.value;
     const riktigSvar = sanger[sangNummer].sang;
-    if (gjett === riktigSvar) {
-        alert('Riktig!');
+    if (gjett.toLowerCase() === riktigSvar.toLowerCase()) {
+        document.querySelector('#resultat').innerHTML = "<div style='animation: spin 1.5s ease-in-out'>Riktig svar!</div>";
     } else {
-        alert("Feil svar, prøv igjen!");
+        document.querySelector('#resultat').innerHTML = "<div style='color: red; animation: spin 1.5s ease-in-out'>Feil svar!</div>";
     }
 });
 

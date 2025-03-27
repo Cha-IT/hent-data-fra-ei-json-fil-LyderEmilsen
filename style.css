@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f0f2f5;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: #989898;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0683d7;
+}
+
+#sangliste div {
+  padding: 10px;
+  margin: 10px 0;
+  width: 250px;
+  background-color: #c8d7db;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#gjett input {
+  padding: 12px;
+  margin-top: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #000000;
+  border-radius: 1000px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#gjett input:focus {
+  border-color: #42a3e3;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(1000deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#resultat {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+
+
+img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
